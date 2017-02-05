@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.vivit.worldwide.vivit.mobile.test" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>VivitMobileTest</name>
+    <description>
+        A blank PhoneGap app.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
+    </author>
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" platform="android" density="ldpi" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" platform="android" density="mdpi" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" platform="android" density="hdpi" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" platform="android" density="xhdpi" />
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
