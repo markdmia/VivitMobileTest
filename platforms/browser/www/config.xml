@@ -2,11 +2,16 @@
 <widget id="com.vivit.worldwide.vivit.mobile.test" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>VivitMobileTest</name>
     <description>
-        A blank PhoneGap app.
+        Test App for the Vivit Mobile App
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
-    <content src="index.html" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" />
+    <icon density="ldpi" platform="android" src="www/platforms/android/icon/vivit_logo_hdpi.png" />
+    <icon density="mdpi" platform="android" src="www/platforms/android/icon/vivit_logo_hdpi.png" />
+    <icon density="hdpi" platform="android" src="www/platforms/android/icon/vivit_logo_hdpi.png" />
+    <icon density="xhdpi" platform="android" src="www/platforms/android/icon/vivit_logo_hdpi.png" />
+    <content src="source/index.html" />
     <access origin="*" />
 </widget>
