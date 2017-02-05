@@ -7,7 +7,11 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
-    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" platform="android" qualifier="hdpi" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" platform="android" density="ldpi" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" platform="android" density="mdpi" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" platform="android" density="hdpi" />
+    <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" platform="android" density="xhdpi" />
     <content src="index.html" />
     <access origin="*" />
 </widget>
