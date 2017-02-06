@@ -66,3 +66,9 @@ a {
 	padding: 15px; 
 	font-size: 8pt;
 }
+
+.mainBannerAddBlackLine {
+	height: 1px;
+	background-color: black;
+}
+

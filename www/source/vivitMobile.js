@@ -9,17 +9,16 @@
  **********************************************************************************/
 
 $(document).ready(function() {
-	$('#mainPanel').load('source/mainPanel.htm');
-	$('#mainHeader1').load('source/mainHeader.htm');
-	$('#mainHeader2').load('source/mainHeader.htm');
-	$('#mainHeader3').load('source/mainHeader.htm');
-	$('#mainHeader4').load('source/mainHeader.htm');
-	$('#mainHeader5').load('source/mainHeader.htm');
-	$('#mainHeader6').load('source/mainHeader.htm');
+	$('#mainPanel').load('source/mainPanel.htm');													// load the main panel html
+	
+	for (var indx1=1; indx1<6; indx1++) {															// load the main header html onto each page
+		$('#mainHeader' + indx1).load('source/mainHeader.htm');
+		$('#mainBannerAdd' + indx1).load('source/mainBannerAdd.htm');								// load the main banner add html onto each page
+	}
 
-	$('#mainPanel').enhanceWithin().panel();
+	$('#mainPanel').enhanceWithin().panel();														// establish the main panel
 
-	$('#website').click(function() {
+	$('#mainPanel').on('click', '#website', function() {
 		window.open('http://vivit-worldwide.org', '_parent');
 	});
 });
