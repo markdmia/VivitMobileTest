@@ -19,6 +19,11 @@ $(document).ready(function() {
 	$('#mainPanel').enhanceWithin().panel();														// establish the main panel
 
 	$('#mainPanel').on('click', '#website', function() {
-		window.open('http://vivit-worldwide.org', '_parent');
+		if (typeof navigator !== 'undefined' && navigator.app) {									// mobile device
+			navigator.app.loadUrl('http://vivit-worldwide.org/', {openExternal: true});
+		} 
+		else {																						// Possible web browser
+			window.open('http://vivit-worldwide.org/', '_blank');
+		}
 	});
 });
