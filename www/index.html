@@ -1,333 +1,77 @@
-<!DOCTYPE html>
+<!--
+/**********************************************************************************
+ *                       - M E F   A p p l i c a t i o n s -
+ *
+ * index.html (VivitMobileTest)
+ *---------------------------------------------------------------------------------
+ * Written by: Mark Ford / 02-05-2017
+ *
+ * The main html.
+ **********************************************************************************/
+-->
 
+<!DOCTYPE html>
 <html>
 
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="jquery_cdn/jquery.mobile-1.4.5.min.css">
-
-<script src="jquery_cdn/jquery-1.11.3.min.js"></script>
-
-<script src="jquery_cdn/jquery.mobile-1.4.5.min.js"></script>
-
-<style>
-
-.ui-panel-inner {
-
-padding: 0 !important;
-
-}
-
-a {
-
-color: white;
-
-text-decoration: none;
-
-}
-
-</style>
-
-<script>
-
-$(document).ready(function(){
-
-$('#myPanel').enhanceWithin().panel();
-
-//$(document).on("pagebeforeshow","#events",function(){
-// $("#myPanel").panel("open");
-//});
-
-$("#website").click(function(){
-
-window.open("http://vivit-worldwide.org", "_parent");
-
-});
-
-});
-
-</script>
-
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link rel='stylesheet' href='jquery_cdn/jquery.mobile-1.4.5.min.css'>
+		<link rel='stylesheet' href='source/vivitMobile.css'>
+		
+		<script src='jquery_cdn/jquery-1.11.3.min.js'></script>
+		<script src='jquery_cdn/jquery.mobile-1.4.5.min.js'></script>
+		<script src='source/vivitMobile.js'></script>
 </head>
 
 <body>
-
-
-
-<div data-role="panel" id="myPanel">
-
-<img src="Community_1950x487.jpg" height="25%" width="100%">
-
-<div style='background-color:#518bc9;'> 
-
-<div style='width:100%;height:40px;padding-top:12px;text-align:center;color:white;'>
-
-<a href="#events" data-transition="fade">EVENTS</a> <span style='color:yellow;'>&#x25B6;</span>
-
-</div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:black;'></div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:grey;'></div>
-
-<div style='width:100%;height:40px;padding-top:12px;text-align:center;color:white;'>
-
-<a href="#memberBrochure" data-transition="fade">MEMBER BROCHURE</a><span style='color:yellow;'>&#x25B6;</span>
-
-</div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:black;'></div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:grey;'></div>
-
-<div style='width:100%;height:40px;padding-top:12px;text-align:center;color:white;'>
-
-<a href="#lugsSigs" data-transition="fade">LUGS AND SIGS</a><span style='color:yellow;'>&#x25B6;</span>
-
-</div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:black;'></div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:grey;'></div>
-
-<div style='width:100%;height:40px;padding-top:12px;text-align:center;color:white;'>
-
-<a href="#techBeacon" data-transition="fade">TECH BEACON</a><span style='color:yellow;'>&#x25B6;</span>
-
-</div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:black;'></div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:grey;'></div>
-
-<div style='width:100%;height:40px;padding-top:12px;text-align:center;color:white;'>
-
-<a id="website">VIVIT WEBSITE</a> <span style='color:yellow;'>&#x25B6;</span>
-
-</div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:black;'></div>
-
-<div style='position:relative;left:15px;width:85%;height:1px;background-color:grey;'></div>
-
-<div style='width:100%;height:40px;padding-top:12px;text-align:center;color:white;'>
-
-<a href="#appSettings" data-transition="fade">APP SETTINGS</a> <span style='color:yellow;'>&#x25B6;</span>
-
-</div>
-
-</div>
-
-<div style='padding:15px;display:flex;justify-content:center;'>
-
-<img src="vivit_social_media.bmp">
-
-</div>
-
-<div style='padding:15px;font-size:8pt;'>
-
-Version 1.0
-
-</div>
-
-</div>
-
-
-
-<div data-role="page" id="events">
-
-<div data-role="header" data-position="fixed" style='height:66px;background-color:white'>
-
-<span style='position:absolute;top:15px;left:20px;'>
-<a href="#myPanel"><img src="vivit_hamburger_menu.png" height="35px" style='padding-right:20px;'></a>
-<span style='position:absolute;top:0px;left:75px;font-size:24pt;'>Vivit&nbsp;Worldwide
-</span> 
-
-</span>
-
-<span style='position:absolute;float:right;top:12px;right:10px'>
-<img src="vivit_logo.png" height="45px" width="45px">
-</span>
-
-</div>
-
-
-<div data-role="main" class="ui-content">
-<div>
-<img src="head-ad.jpg" height="100%" width="100%">
-</div>
-
-<img src="vivit_events.bmp" width="100%">
-
-</div>
-
-</div>
-
-
-
-<div data-role="page" id="memberBrochure">
-
-<div data-role="header" data-position="fixed" style='height:66px;background-color:white'>
-
-<span style='position:absolute;top:15px;left:20px;'>
-<a href="#myPanel"><img src="vivit_hamburger_menu.png" height="35px" style='padding-right:20px;'></a>
-<span style='position:absolute;top:0px;left:75px;font-size:24pt;'>Vivit&nbsp;Worldwide
-</span> 
-
-</span>
-
-<span style='position:absolute;float:right;top:12px;right:10px'>
-<img src="vivit_logo.png" height="45px" width="45px">
-</span>
-
-</div>
-
-
-
-<div data-role="main" class="ui-content">
-<div>
-<img src="head-ad.jpg" height="100%" width="100%">
-</div>
-
-<object data="C:\Users\fordm\Desktop\2017_VivitMemberBrochure.pdf" type="application/pdf" width="100%" height="800px">
-
-alt : <a href="C:\Users\fordm\Desktop\2017_VivitMemberBrochure.pdf">2017_VivitMemberBrochure.pdf</a>
-
-</object>
-
-</div>
-
-</div>
-
-
-
-<div data-role="page" id="lugsSigs">
-
-<div data-role="header" data-position="fixed" style='height:66px;background-color:white'>
-
-<span style='position:absolute;top:15px;left:20px;'>
-<a href="#myPanel"><img src="vivit_hamburger_menu.png" height="35px" style='padding-right:20px;'></a>
-<span style='position:absolute;top:0px;left:75px;font-size:24pt;'>Vivit&nbsp;Worldwide
-</span> 
-
-</span>
-
-<span style='position:absolute;float:right;top:12px;right:10px'>
-<img src="vivit_logo.png" height="45px" width="45px">
-</span>
-
-</div>
-
-
-<div data-role="main" class="ui-content">
-<div>
-<img src="head-ad.jpg" height="100%" width="100%">
-</div>
-
-<img src="lugs_sigs.bmp" width="100%">
-
-</div>
-
-</div>
-
-
-
-<div data-role="page" id="techBeacon">
-
-<div data-role="header" data-position="fixed" style='height:66px;background-color:white'>
-
-<span style='position:absolute;top:15px;left:20px;'>
-<a href="#myPanel"><img src="vivit_hamburger_menu.png" height="35px" style='padding-right:20px;'></a>
-<span style='position:absolute;top:0px;left:75px;font-size:24pt;'>Vivit&nbsp;Worldwide
-</span> 
-
-</span>
-
-<span style='position:absolute;float:right;top:12px;right:10px'>
-<img src="vivit_logo.png" height="45px" width="45px">
-</span>
-
-</div>
-
-
-<div data-role="main" class="ui-content">
-<div>
-<img src="head-ad.jpg" height="100%" width="100%">
-</div>
-
-<img src="tech_beacon.bmp" width="100%">
-
-</div>
-
-</div>
-
-
-
-<div data-role="page" id="vivitWebsite">
-
-<div data-role="header" data-position="fixed" style='height:66px;background-color:white'>
-
-<span style='position:absolute;top:15px;left:20px;'>
-<a href="#myPanel"><img src="vivit_hamburger_menu.png" height="35px" style='padding-right:20px;'></a>
-<span style='position:absolute;top:0px;left:75px;font-size:24pt;'>Vivit&nbsp;Worldwide
-</span> 
-
-</span>
-
-<span style='position:absolute;float:right;top:12px;right:10px'>
-<img src="vivit_logo.png" height="45px" width="45px">
-</span>
-
-</div>
-
-
-<div data-role="main" class="ui-content">
-
-<object data="2017_VivitMemberBrochure.pdf" type="application/pdf" width="100%" height="800px">
-
-alt : <a href="2017_VivitMemberBrochure.pdf">2017_VivitMemberBrochure.pdf</a>
-
-</object>
-
-</div>
-
-</div>
-
-
-
-<div data-role="page" id="appSettings">
-
-<div data-role="header" data-position="fixed" style='height:66px;background-color:white'>
-
-<span style='position:absolute;top:15px;left:20px;'>
-<a href="#myPanel"><img src="vivit_hamburger_menu.png" height="35px" style='padding-right:20px;'></a>
-<span style='position:absolute;top:0px;left:75px;font-size:24pt;'>Vivit&nbsp;Worldwide
-</span> 
-
-</span>
-
-<span style='position:absolute;float:right;top:12px;right:10px'>
-<img src="vivit_logo.png" height="45px" width="45px">
-</span>
-
-</div>
-
-
-
-<div data-role="main" class="ui-content">
-<div>
-<img src="head-ad.jpg" height="100%" width="100%">
-</div>
-<div>
-Notifications: <input type="checkbox" data-role="flipswitch" name="switch" id="switch" checked>
-</div>
-</div>
-
-</div>
-
-
+	<div id='mainPanel' data-role='panel'></div>
+
+	<div id='events' data-role='page'>
+		<div id='mainHeader1' data-role='header' data-position='fixed' class='mainHeader'></div>
+
+		<div data-role='main' class='ui-content'>
+			<div id='mainBannerAdd1'></div>
+			<img src='images\vivit_events.bmp' width='100%'>
+		</div>
+	</div>
+
+	<div id='memberBrochure' data-role='page'>
+		<div id='mainHeader2' data-role='header' data-position='fixed' class='mainHeader'></div>
+
+		<div data-role='main' class='ui-content'>
+			<div id='mainBannerAdd2'></div>
+			<img src='images\2017_VivitMemberBrochure.bmp' width='100%'>
+		</div>
+	</div>
+
+	<div id='lugsSigs' data-role='page'>
+		<div id='mainHeader3' data-role='header' data-position='fixed' class='mainHeader'></div>
+
+		<div data-role='main' class='ui-content'>
+			<div id='mainBannerAdd3'></div>
+			<img src='images\lugs_sigs.bmp' width='100%'>
+		</div>
+	</div>
+
+	<div id='techBeacon' data-role='page'>
+		<div id='mainHeader4' data-role='header' data-position='fixed' class='mainHeader'></div>
+
+		<div data-role='main' class='ui-content'>
+			<div id='mainBannerAdd4'></div>
+			<img src='images\tech_beacon.bmp' width='100%'>
+		</div>
+	</div>
+
+	<div id='appSettings' data-role='page'>
+		<div id='mainHeader5' data-role='header' data-position='fixed' class='mainHeader'></div>
+
+		<div data-role='main' class='ui-content'>
+			<div id='mainBannerAdd5'></div>
+			<div>
+				Notifications: <input type='checkbox' data-role='flipswitch' name='switch' id='switch' checked>
+			</div>
+		</div>
+	</div>
 
 </body>
 
