@@ -6,4 +6,5 @@
     <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" />
     <content src="index.html" />
     <access origin="*" />
+    <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/apache/cordova-plugin-inappbrowser" />
 </widget>
