@@ -19,8 +19,10 @@ $(document).ready(function() {
 	$('#mainPanel').enhanceWithin().panel();														// establish the main panel
 
 	$('#mainPanel').on('click', '#website', function() {
-	 window.location='http://vivit-worldwide.org/';
-
+		window.open('http://vivit-worldwide.org/', '_system');
+//		window.location='http://vivit-worldwide.org/';
+	});
+	
 //	$('#mainPanel').on('click', '#website', function() {
 //		if (typeof navigator !== 'undefined' && navigator.app) {									// mobile device
 //			navigator.app.loadUrl('http://vivit-worldwide.org/', {openExternal: true});
@@ -28,5 +30,5 @@ $(document).ready(function() {
 //		else {																						// Possible web browser
 //			window.open('http://vivit-worldwide.org/', '_blank');
 //		}
-	});
+//	});
 });

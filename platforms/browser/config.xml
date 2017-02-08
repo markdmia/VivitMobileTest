@@ -5,5 +5,5 @@
     <author email="markdmia@gmail.com" href="http://vivit-worldwide.org">Mark Ford</author>
     <icon src="www/platforms/android/icon/vivit_logo_hdpi.png" />
     <content src="index.html" />
-    <access browserOnly="true" origin="*" />
+    <access origin="*" />
 </widget>
