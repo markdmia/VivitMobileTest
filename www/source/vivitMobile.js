@@ -19,8 +19,11 @@ $(document).ready(function() {
 	$('#mainPanel').enhanceWithin().panel();														// establish the main panel
 
 	$('#mainPanel').on('click', '#website', function() {
-	 window.location='http://vivit-worldwide.org/';
-
+		showHelp();
+//		window.open('http://vivit-worldwide.org/', '_system');
+//		window.location='http://vivit-worldwide.org/';
+	});
+	
 //	$('#mainPanel').on('click', '#website', function() {
 //		if (typeof navigator !== 'undefined' && navigator.app) {									// mobile device
 //			navigator.app.loadUrl('http://vivit-worldwide.org/', {openExternal: true});
@@ -28,5 +31,53 @@ $(document).ready(function() {
 //		else {																						// Possible web browser
 //			window.open('http://vivit-worldwide.org/', '_blank');
 //		}
-	});
+//	});
 });
+
+var inAppBrowserRef;
+
+function showHelp() {
+	var url		= "http://vivit-worldwide.org/"
+	var target 	= "_blank";
+	var options = "location=yes,hidden=yes";
+
+	inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
+	inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
+	inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
+	inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
+}
+
+
+function loadStartCallBack() {
+    $('#status-message').text("loading please wait ...");
+}
+
+
+function loadStopCallBack() {
+    if (inAppBrowserRef != undefined) {
+        inAppBrowserRef.insertCSS({ code: "body{font-size: 25px;" });
+        $('#status-message').text("");
+        inAppBrowserRef.show();
+    }
+}
+
+
+function loadErrorCallBack(params) {
+    $('#status-message').text("");
+    var scriptErrorMesssage =
+       "alert('Sorry we cannot open that page. Message from the server is : "
+       + params.message + "');"
+ 
+    inAppBrowserRef.executeScript({ code: scriptErrorMesssage }, executeScriptCallBack);
+    inAppBrowserRef.close();
+    inAppBrowserRef = undefined;
+}
+ 
+
+function executeScriptCallBack(params) {
+    if (params[0] == null) {
+        $('#status-message').text(
+           "Sorry we couldn't open that page. Message from the server is : '"
+           + params.message + "'");
+    }
+}
